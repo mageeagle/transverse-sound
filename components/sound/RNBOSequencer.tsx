@@ -1,8 +1,7 @@
-import { use, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import * as Tone from "tone";
 import { createDevice, Device, TimeNow, MessageEvent } from "@rnbo/js";
 import { useUpdateEffect } from "react-use";
-import { fetchLink } from "@/helpers/fetcher";
 import { useLoading } from "@/hooks/useBufferLoading";
 import { useObject } from "@/hooks/useObject";
 import { scaleClamp } from "@/helpers/mathsHelper";

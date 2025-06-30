@@ -11,7 +11,7 @@ import Terms from "@/components/ui/Terms";
 import StartDemo from "@/components/ui/StartDemo";
 import DemoSelection from "@/components/ui/DemoSelection";
 import DialogChain from "@/components/ui/DialogChain";
-
+const loadClass = "absolute left-0 right-0 top-0 bottom-0 text-center z-10 w-svw h-dvh flex items-center justify-center"
 export default function Homepage() {
   const [browser, setBrowser] = useState(true);
   useEffectOnce(() => {
@@ -26,7 +26,7 @@ export default function Homepage() {
     () =>
       dynamic(() => import("@/components/sound/AmbiPlayerOmni"), {
         loading: () => (
-          <div className="absolute left-0 right-0 top-0 bottom-0 m-auto text-center z-10 w-full h-full">
+          <div className={loadClass}>
             Loading Sound
           </div>
         ),
@@ -39,7 +39,7 @@ export default function Homepage() {
     () =>
       dynamic(() => import("@/components/ui/WakeLockToggle"), {
         loading: () => (
-          <div className="absolute left-0 right-0 top-0 bottom-0 m-auto text-center z-10 w-full h-full">
+          <div className={loadClass}>
             Loading WakeLock
           </div>
         ),
@@ -52,7 +52,7 @@ export default function Homepage() {
     () =>
       dynamic(() => import("@/components/sound/RNBOInit"), {
         loading: () => (
-          <div className="absolute left-0 right-0 top-0 bottom-0 m-auto text-center z-10 w-full h-full">
+          <div className={loadClass}>
             Loading RNBO
           </div>
         ),
@@ -64,7 +64,7 @@ export default function Homepage() {
     () =>
       dynamic(() => import("@/components/ui/MainInterfaceDemo"), {
         loading: () => (
-          <div className="absolute left-0 right-0 top-0 bottom-0 m-auto text-center z-10 w-full h-full">
+          <div className={loadClass}>
             Loading RNBO
           </div>
         ),
