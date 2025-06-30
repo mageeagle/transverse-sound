@@ -45,7 +45,7 @@ export default function Ambitest() {
           className="fixed top-0 bottom-0 right-0 left-0 flex items-center justify-center"
           onClick={toneStart}
         >
-          Click to Test Ambisonics Orientation
+          Touch to Test Ambisonics Orientation
         </div>
       )}
     </>

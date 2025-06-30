@@ -76,7 +76,7 @@ export default function Homepage() {
   return (
     <div>
       <AmbiPlayerOmni />
-      <div className={"w-svw h-dvh relative flex flex-col select-none text-white"}>
+      <div className={"w-svw h-dvh relative flex flex-col select-none bg-black text-white"}>
         {tone && !mainOn && <DemoSelection />}
         <ClientViewport />
         <MainInterfaceDemo />
