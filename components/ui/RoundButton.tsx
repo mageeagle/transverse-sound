@@ -21,8 +21,8 @@ const RoundButton = ({
           ? "text-white border-white bg-[#3469b2] " +
             "hover:text-[#22ffbd] hover:border-[#22ffbd] " +
             "active:text-[#f5cac8] active:border-[#f5cac8] "
-          : "text-[#22ffbd] border-[#22ffbd] bg-[#3469b2]/50 " +
-            "hover:text-white hover:border-white " +
+          : "text-[#22ffbd] border-[#22ffbd] " +
+            "hover:text-[#3469b2] hover:border-[#3469b2] " +
             "active:text-[#f5cac8] active:border-[#f5cac8] ") +
         className
       }

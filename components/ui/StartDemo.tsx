@@ -39,7 +39,7 @@ const StartDemo = () => {
         <audio ref={audio} className="hidden">
           <source src="/assets/audio/silent.mp3" type="audio/mp3"></source>
         </audio>
-        <div className="flex flex-col items-center gap-10" onClick={toneStart}>
+        <div className="flex flex-col items-center gap-10 w-3/5 sm:w-full text-center" onClick={toneStart}>
           {language === "Cantonese" && (
             <div className="flex flex-col items-center p-4 gap-2">
               <h4 className="select-none text-2xl font-light font-stretch-ultra-condensed tracking-widest text-[#22ffbd]">
