@@ -15,6 +15,8 @@ const About = () => {
             <Link
               className="btn"
               href="https://github.com/mageeagle/transverse-sound"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Github
             </Link>
@@ -41,7 +43,12 @@ const About = () => {
                   particularly interested in how architecture, as a kind of
                   spatial art, interacts with music/sound as a kind of temporal
                   art.`}
-                  <Link className="btn" href="https://qqaqq.net/">
+                  <Link
+                    className="btn"
+                    href="https://qqaqq.net/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Website
                   </Link>
                 </div>
@@ -60,7 +67,12 @@ const About = () => {
                   Design from the Hong Kong Academy for Performing Arts (HKAPA).
                   Sham has collaborated with various theatre groups, arts
                   festivals, and independent artists in Hong Kong.`}
-                  <Link className="btn" href="https://victorsham.com/">
+                  <Link
+                    className="btn"
+                    href="https://victorsham.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Website
                   </Link>
                 </div>
@@ -71,7 +83,9 @@ const About = () => {
               >
                 {" "}
                 <input type="checkbox" />
-                <div className="collapse-title font-semibold">Lawrence Ting</div>
+                <div className="collapse-title font-semibold">
+                  Lawrence Ting
+                </div>
                 <div className="collapse-content text-sm gap-2 flex flex-col">
                   {`Lawrence Ting is a registered architect and has over ten years
                   of woodwork and bamboo craft experience with expertise in
@@ -88,7 +102,12 @@ const About = () => {
                   2015. His work has been exhibited in various events, including
                   the London Craft Week, Chengdu Creativity & Design Week, Lane
                   Crawford Beijing Store and Kwun Tong Promenade.`}
-                  <Link className="btn" href="https://grainwooddesign.com/">
+                  <Link
+                    className="btn"
+                    href="https://grainwooddesign.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Website
                   </Link>
                 </div>
@@ -100,6 +119,8 @@ const About = () => {
             tabIndex={4}
             className="collapse border-base-300 bg-base-100 border px-2"
           >
+            {" "}
+            <input type="checkbox" />
             <div className="collapse-title font-semibold">
               Paperback Production
             </div>
@@ -126,6 +147,8 @@ const About = () => {
               <Link
                 className="btn"
                 href="https://www.instagram.com/paperbacksketch.project/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Instagram
               </Link>
@@ -170,6 +193,8 @@ const About = () => {
             <Link
               className="btn"
               href="https://github.com/mageeagle/transverse-sound"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Github
             </Link>
@@ -191,7 +216,12 @@ const About = () => {
                 <div className="collapse-title font-semibold">胡皓嵐</div>
                 <div className="collapse-content text-sm gap-2 flex flex-col">
                   胡皓嵐為作曲家及跨媒體藝術家。作品涵蓋聲音裝置、聲音與影像作品、網絡互動作品以及器樂作品。尤其對建築與聲音，空間與時間的關係感興趣。胡氏畢業於柏林藝術大學修讀聲音研究及聲音藝術、香港大學建築系及香港演藝學院音樂學院，主修作曲。
-                  <Link className="btn" href="https://qqaqq.net/">
+                  <Link
+                    className="btn"
+                    href="https://qqaqq.net/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     網頁
                   </Link>
                 </div>
@@ -208,7 +238,12 @@ const About = () => {
                   UdK）聲音研究與聲音藝術碩士，以及擁有香港演藝學院（Hong Kong
                   Academy for Performing Arts,
                   HKAPA）聲音設計的學士學位。岑氏曾與香港的各個劇團、藝術節及獨立藝術家合作。
-                  <Link className="btn" href="https://victorsham.com/">
+                  <Link
+                    className="btn"
+                    href="https://victorsham.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     網頁
                   </Link>
                 </div>
@@ -224,7 +259,12 @@ const About = () => {
                   丁樂融有超過十年木工和竹藝經驗亦是香港註冊建築師，於2012年成立GRAIN
                   DESIGN工作室，作品包括藝術裝置和訂造傢俬。GRAIN
                   DESIGN的設計宗旨希望透過物料的特性融合傳統工藝製作出獨一無二的藝術設計。作品曾於倫敦藝術周、成都創意設計周、北京連卡佛、觀塘海濱公園等地方展出。
-                  <Link className="btn" href="https://grainwooddesign.com/">
+                  <Link
+                    className="btn"
+                    href="https://grainwooddesign.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     網頁
                   </Link>
                 </div>
@@ -236,6 +276,8 @@ const About = () => {
             tabIndex={4}
             className="collapse border-base-300 bg-base-100 border px-2"
           >
+            {" "}
+            <input type="checkbox" />
             <div className="collapse-title font-semibold">紙背製作</div>
             <div className="collapse-content text-sm gap-2 flex flex-col">
               紙背製作為一個以創作新型式紀錄作品為主的團隊，成員包括聲音設計師岑宗達，聲音藝術家胡皓嵐以及紀錄劇場創作人羅妙妍。團隊自2021年開始創作多個以空間音效（Spatial
@@ -248,6 +290,8 @@ const About = () => {
               <Link
                 className="btn"
                 href="https://www.instagram.com/paperbacksketch.project/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Instagram
               </Link>
