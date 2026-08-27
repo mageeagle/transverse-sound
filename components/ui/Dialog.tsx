@@ -1,5 +1,5 @@
 "use client";
-import { JSX, useRef } from "react";
+import { JSX, useRef, useEffect } from "react";
 import CloseIcon from "./icons/CloseIcon";
 import RoundButton from "./RoundButton";
 
@@ -17,6 +17,23 @@ export default function Dialog({
   dark?: boolean;
 }) {
   const modalRef = useRef<HTMLDialogElement>(null);
+
+  useEffect(() => {
+    const node = modalRef.current;
+    
+    const handleBlur = () => {
+      if (node && !node.hidden) {
+        node.close();
+      }
+    };
+
+    window.addEventListener("blur", handleBlur);
+    
+    return () => {
+      window.removeEventListener("blur", handleBlur);
+      node?.close();
+    };
+  }, []);
 
   const handleCheckoutClick = () => {
     modalRef.current!.hidden = false;
