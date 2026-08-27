@@ -1,5 +1,6 @@
 "use client";
-import { JSX, useRef, useEffect } from "react";
+import { JSX, useRef, useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import CloseIcon from "./icons/CloseIcon";
 import RoundButton from "./RoundButton";
 
@@ -17,21 +18,12 @@ export default function Dialog({
   dark?: boolean;
 }) {
   const modalRef = useRef<HTMLDialogElement>(null);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const node = modalRef.current;
-    
-    const handleBlur = () => {
-      if (node && !node.hidden) {
-        node.close();
-      }
-    };
-
-    window.addEventListener("blur", handleBlur);
-    
+    setMounted(true);
     return () => {
-      window.removeEventListener("blur", handleBlur);
-      node?.close();
+      modalRef.current?.close();
     };
   }, []);
 
@@ -54,16 +46,20 @@ export default function Dialog({
         callback={handleCheckoutClick}
         dark={dark}
       />
-      <dialog ref={modalRef} className="modal modal-bottom sm:modal-middle">
-        <div className="modal-box">
-          <div className="py-4">{contents}</div>
-          <RoundButton
-            icon={<CloseIcon />}
-            className={"top-0 right-0 absolute m-4 text-xs"}
-            callback={handleCloseModal}
-          />
-        </div>
-      </dialog>
+      {mounted &&
+        createPortal(
+          <dialog ref={modalRef} className="modal modal-bottom sm:modal-middle">
+            <div className="modal-box">
+              <div className="py-4">{contents}</div>
+              <RoundButton
+                icon={<CloseIcon />}
+                className={"top-0 right-0 absolute m-4 text-xs"}
+                callback={handleCloseModal}
+              />
+            </div>
+          </dialog>,
+          document.body
+        )}
     </div>
   );
 }
